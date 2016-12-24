@@ -1,4 +1,4 @@
-defmodule SneakerfansPhoenix.ChannelCase do
+defmodule SneakerfansElixir.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -20,22 +20,22 @@ defmodule SneakerfansPhoenix.ChannelCase do
       # Import conveniences for testing with channels
       use Phoenix.ChannelTest
 
-      alias SneakerfansPhoenix.Repo
+      alias SneakerfansElixir.Repo
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
 
 
       # The default endpoint for testing
-      @endpoint SneakerfansPhoenix.Endpoint
+      @endpoint SneakerfansElixir.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(SneakerfansPhoenix.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(SneakerfansElixir.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(SneakerfansPhoenix.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(SneakerfansElixir.Repo, {:shared, self()})
     end
 
     :ok

@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :sneakerfans_phoenix,
-  ecto_repos: [SneakerfansPhoenix.Repo]
+config :sneakerfans_elixir,
+  ecto_repos: [SneakerfansElixir.Repo]
 
 # Configures the endpoint
-config :sneakerfans_phoenix, SneakerfansPhoenix.Endpoint,
+config :sneakerfans_elixir, SneakerfansElixir.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "6F/7p8R+QZ4h3rQx/QrrVjtleKOWO53ja1hPINexURr67wGxXqqa+bJAP8pcelnU",
-  render_errors: [view: SneakerfansPhoenix.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: SneakerfansPhoenix.PubSub,
+  secret_key_base: "+r8Zt8JEuy/Ar97cdniWAzv2IzONdRPCzlnqahqWIxg61LPFNbmhTMWGhGYfSVCS",
+  render_errors: [view: SneakerfansElixir.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: SneakerfansElixir.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

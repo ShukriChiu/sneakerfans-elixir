@@ -1,5 +1,5 @@
-defmodule SneakerfansPhoenix.ErrorView do
-  use SneakerfansPhoenix.Web, :view
+defmodule SneakerfansElixir.ErrorView do
+  use SneakerfansElixir.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

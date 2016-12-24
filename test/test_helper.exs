@@ -1,4 +1,4 @@
 ExUnit.start
 
-Ecto.Adapters.SQL.Sandbox.mode(SneakerfansPhoenix.Repo, :manual)
+Ecto.Adapters.SQL.Sandbox.mode(SneakerfansElixir.Repo, :manual)
 

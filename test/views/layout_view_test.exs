@@ -1,3 +1,3 @@
-defmodule SneakerfansPhoenix.LayoutViewTest do
-  use SneakerfansPhoenix.ConnCase, async: true
+defmodule SneakerfansElixir.LayoutViewTest do
+  use SneakerfansElixir.ConnCase, async: true
 end

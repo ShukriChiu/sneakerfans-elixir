@@ -1,5 +1,5 @@
-defmodule SneakerfansPhoenix.PageControllerTest do
-  use SneakerfansPhoenix.ConnCase
+defmodule SneakerfansElixir.PageControllerTest do
+  use SneakerfansElixir.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

@@ -1,3 +1,3 @@
-defmodule SneakerfansPhoenix.LayoutView do
-  use SneakerfansPhoenix.Web, :view
+defmodule SneakerfansElixir.LayoutView do
+  use SneakerfansElixir.Web, :view
 end

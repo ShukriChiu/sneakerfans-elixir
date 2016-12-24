@@ -1,12 +1,12 @@
-defmodule SneakerfansPhoenix.Web do
+defmodule SneakerfansElixir.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use SneakerfansPhoenix.Web, :controller
-      use SneakerfansPhoenix.Web, :view
+      use SneakerfansElixir.Web, :controller
+      use SneakerfansElixir.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -30,12 +30,12 @@ defmodule SneakerfansPhoenix.Web do
     quote do
       use Phoenix.Controller
 
-      alias SneakerfansPhoenix.Repo
+      alias SneakerfansElixir.Repo
       import Ecto
       import Ecto.Query
 
-      import SneakerfansPhoenix.Router.Helpers
-      import SneakerfansPhoenix.Gettext
+      import SneakerfansElixir.Router.Helpers
+      import SneakerfansElixir.Gettext
     end
   end
 
@@ -49,9 +49,9 @@ defmodule SneakerfansPhoenix.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import SneakerfansPhoenix.Router.Helpers
-      import SneakerfansPhoenix.ErrorHelpers
-      import SneakerfansPhoenix.Gettext
+      import SneakerfansElixir.Router.Helpers
+      import SneakerfansElixir.ErrorHelpers
+      import SneakerfansElixir.Gettext
     end
   end
 
@@ -65,10 +65,10 @@ defmodule SneakerfansPhoenix.Web do
     quote do
       use Phoenix.Channel
 
-      alias SneakerfansPhoenix.Repo
+      alias SneakerfansElixir.Repo
       import Ecto
       import Ecto.Query
-      import SneakerfansPhoenix.Gettext
+      import SneakerfansElixir.Gettext
     end
   end
 

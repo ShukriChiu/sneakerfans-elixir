@@ -1,4 +1,4 @@
-defmodule SneakerfansPhoenix.ErrorHelpers do
+defmodule SneakerfansElixir.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -32,9 +32,9 @@ defmodule SneakerfansPhoenix.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(SneakerfansPhoenix.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(SneakerfansElixir.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(SneakerfansPhoenix.Gettext, "errors", msg, opts)
+      Gettext.dgettext(SneakerfansElixir.Gettext, "errors", msg, opts)
     end
   end
 end

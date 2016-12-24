@@ -1,5 +1,5 @@
-defmodule SneakerfansPhoenix.Router do
-  use SneakerfansPhoenix.Web, :router
+defmodule SneakerfansElixir.Router do
+  use SneakerfansElixir.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,20 @@ defmodule SneakerfansPhoenix.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", SneakerfansPhoenix do
+  scope "/", SneakerfansElixir do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
+  scope "/absinthe" do
+    pipe_through :api
+    forward "/", Absinthe.Plug,
+    schema: SneakerfansElixir.Schema
+  end
+
   # Other scopes may use custom stacks.
-  # scope "/api", SneakerfansPhoenix do
+  # scope "/api", SneakerfansElixir do
   #   pipe_through :api
   # end
 end
